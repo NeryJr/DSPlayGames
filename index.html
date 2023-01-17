@@ -8,16 +8,102 @@
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    <header>
-
+    <header>   
+        <nav>
+            <h1>DSPlayGames</h1>
+            <ul>
+                <li><a href="#news">Notícias</a></li>
+                <li><a href="#games">Jogos</a></li>
+                <li><a href="#subscribe">Increva-se</a></li>
+            </ul>
+            <img src="img/Profile.svg" alt="Foto de perfil">
+        </nav>
     </header>
 
     <main>
+        <section>
+            <h2>Últimas notícias</h2>
+            <div>
+                <div>
+                    <h3>Título principal da notícia</h3>
+                    <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto vitae ducimus aperiam.</h4>
+                    <p>23/02/2022</p>
+                </div>
+                <div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto vitae ducimus aperiam. Harum, in dicta? Perspiciatis nam, facilis nesciunt, expedita esse labore officiis ut ipsam voluptates aperiam laboriosam sequi! Expedita vitae iste quae veniam molestiae ea ad alias maiores. Numquam dolor eaque recusandae eius nihil quibusdam esse nisi asperiores in nulla dicta distinctio aliquid ullam aspernatur ad amet fugit dolorem sapiente veritatis quo, rem a. Molestiae qui sed enim! Laborum doloribus nisi quia dolore obcaecati reiciendis quae, numquam consectetur sed animi temporibus inventore nemo. Asperiores fugit rerum, placeat quas in nobis obcaecati similique quae assumenda culpa ab sit voluptatum molestiae voluptates facilis optio recusandae tempore nihil atque et nesciunt nemo perferendis adipisci harum. Corrupti eum autem veritatis et beatae reiciendis, deleniti corporis, voluptas, eaque ipsa nemo odio? Eligendi sapiente id enim quibusdam, repudiandae optio error! Vitae perspiciatis voluptatem sequi nostrum necessitatibus culpa fuga ...</p>
+                    <h5>Ler mais...</h5>
+                </div>
+            </div>
+            <div>
+                <div>
+                    <h3>Título principal da notícia</h3>
+                    <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto vitae ducimus aperiam.</h4>
+                    <p>23/02/2022</p>
+                </div>
+                <div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto vitae ducimus aperiam. Harum, in dicta? Perspiciatis nam, facilis nesciunt, expedita esse labore officiis ut ipsam voluptates aperiam laboriosam sequi! Expedita vitae iste quae veniam molestiae ea ad alias maiores. Numquam dolor eaque recusandae eius nihil quibusdam esse nisi asperiores in nulla dicta distinctio aliquid ullam aspernatur ad amet fugit dolorem sapiente veritatis quo, rem a. Molestiae qui sed enim! Laborum doloribus nisi quia dolore obcaecati reiciendis quae, numquam consectetur sed animi temporibus inventore nemo. Asperiores fugit rerum, placeat quas in nobis obcaecati similique quae assumenda culpa ab sit voluptatum molestiae voluptates facilis optio recusandae tempore nihil atque et nesciunt nemo perferendis adipisci harum. Corrupti eum autem veritatis et beatae reiciendis, deleniti corporis, voluptas, eaque ipsa nemo odio? Eligendi sapiente id enim quibusdam, repudiandae optio error! Vitae perspiciatis voluptatem sequi nostrum necessitatibus culpa fuga ...</p>
+                    <h5>Ler mais...</h5>
+                </div>
+            </div>
+            <div>
+                <input type="button" value="Carregar mais">
+            </div>
+        </section>
 
+        <section>
+            <h2>Jogos</h2>
+            <div>
+                <img src="img/game.png" alt="Jogo Horizon Forbidden West">
+                <div>
+                    <h4>Horizon Forbidden West</h4>
+                    <p><span>De</span> Sony Interactive Entertainment</p>
+                    <h3>9.7</h3>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2>Faça sua inscrição</h2>
+            <form action="submit">
+                <div>
+                    <input type="text" name="name" id="ctrl-name" placeholder="Nome completo">
+                    <input type="email" name="email" id="ctrl-email" placeholder="Digite seu email">
+                </div>
+                <div>
+                    <label for="ctrl-plataform">Qual sua plataforma preferida?</label>
+                    <div>
+                        <input type="radio" name="plataform" id="ctrl-plataform-1">
+                        <label for="ctrl-plataform-1">PC</label>
+                        <input type="radio" name="plataform" id="ctrl-plataform-2">
+                        <label for="ctrl-plataform-2">Xbox</label>
+                        <input type="radio" name="plataform" id="ctrl-plataform-3">
+                        <label for="ctrl-plataform-3">Playstation</label>
+                    </div>
+                </div>
+                <div>
+                    <input type="checkbox" name="news" id="ctrl-news">
+                    <label for="ctrl-news">Desejo receber novidades.</label>
+                </div>
+                <div>
+                    <input type="submit" name="submit" id="ctrl-submit" value="Enviar">
+                    <input type="reset" value="Limpar">
+                </div>
+            </form>
+        </section>
     </main>
     
     <footer>
-
+        <div>
+            <a href="">@dsplaygames</a>
+            <a href="">/dsplaygames</a>
+        </div>
+        <div>
+            <p>DS Play Games Ltda. Todos direitos reservados</p>
+        </div>
+        <div>
+            <a href="">Política de privacidade</a>
+            <a href="">Termos de uso</a>
+        </div>
     </footer>
 </body>
 </html>
