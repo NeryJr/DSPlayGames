@@ -26,13 +26,14 @@ header {
     background-color: var(--color-green);
     height: 90px;
     display: flex;
-    box-shadow: 0 3px 5px var(--color-darkgray-text);
+    box-shadow: 0 2px 5px var(--color-darkgray-text);
 }
 
 nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 14px 10px;
 }
 
 nav h1 {
@@ -46,4 +47,51 @@ nav ul {
 
 nav img {
     width: 62px;
+}
+
+.last-news {
+    padding: 40px 10px;
+}
+
+.last-news h2 {
+    color: var(--color-darkgray-text);
+    font-size: 24px;
+    text-align: center;
+}
+
+.card-last-news {
+    background-color: var(--color-lightgray);
+    padding: 16px 13px 13px 12px;
+    border-radius: 8px;
+    margin: 8px 0 28px 0;
+    box-shadow: 0 3px 2px var(--color-darkgray-text);
+}
+
+.card-last-news h3 {
+    color: var(--color-green);
+    font-size: 16px;
+}
+
+.card-last-news h4 {
+    color: var(--color-darkgray-text);
+    font-size: 12px;
+    padding: 3px 0;
+}
+
+.card-data {
+    font-size: 10px;
+    color: var(--color-green);
+    padding-top: 2px;
+}
+
+.card-last-news-text {
+    font-size: 10px;
+    color: var(--color-darkgray-text);
+    padding-top: 12px;
+}
+
+.card-last-news h5 {
+    font-size: 14px;
+    color: var(--color-red);
+    padding-top: 8px;
 }
