@@ -47,64 +47,86 @@
                     <h5>Ler mais...</h5>
                 </div>
             </div>
-            <div>
+            <div class="last-news-button">
                 <input type="button" value="Carregar mais">
             </div>
         </section>
 
-        <section class="container">
-            <h2>Jogos</h2>
-            <div>
-                <img src="img/game.png" alt="Jogo Horizon Forbidden West">
-                <div>
-                    <h4>Horizon Forbidden West</h4>
-                    <p><span>De</span> Sony Interactive Entertainment</p>
-                    <h3>9.7</h3>
+        <section class="games">
+            <div class="container">
+                <h2>Jogos</h2>
+                <div class="games-card">
+                    <img src="img/game.png" alt="Jogo Horizon Forbidden West">
+                    <div class="games-card-text">
+                        <h4>Horizon Forbidden West</h4>
+                        <p><span>De</span> Sony Interactive Entertainment</p>
+                        <h3>9.7</h3>
+                    </div>
+                </div>
+                <div class="games-card">
+                    <img src="img/game.png" alt="Jogo Horizon Forbidden West">
+                    <div class="games-card-text">
+                        <h4>Horizon Forbidden West</h4>
+                        <p><span>De</span> Sony Interactive Entertainment</p>
+                        <h3>9.7</h3>
+                    </div>
+                </div>
+                <div class="games-card">
+                    <img src="img/game.png" alt="Jogo Horizon Forbidden West">
+                    <div class="games-card-text">
+                        <h4>Horizon Forbidden West</h4>
+                        <p><span>De</span> Sony Interactive Entertainment</p>
+                        <h3>9.7</h3>
+                    </div>
                 </div>
             </div>
         </section>
 
-        <section class="container">
-            <h2>Faça sua inscrição</h2>
-            <form action="submit">
-                <div>
-                    <input type="text" name="name" id="ctrl-name" placeholder="Nome completo">
-                    <input type="email" name="email" id="ctrl-email" placeholder="Digite seu email">
-                </div>
-                <div>
-                    <label for="ctrl-plataform">Qual sua plataforma preferida?</label>
+        <section>
+            <div class="container">
+                <h2>Faça sua inscrição</h2>
+                <form action="submit">
                     <div>
-                        <input type="radio" name="plataform" id="ctrl-plataform-1">
-                        <label for="ctrl-plataform-1">PC</label>
-                        <input type="radio" name="plataform" id="ctrl-plataform-2">
-                        <label for="ctrl-plataform-2">Xbox</label>
-                        <input type="radio" name="plataform" id="ctrl-plataform-3">
-                        <label for="ctrl-plataform-3">Playstation</label>
+                        <input type="text" name="name" id="ctrl-name" placeholder="Nome completo">
+                        <input type="email" name="email" id="ctrl-email" placeholder="Digite seu email">
                     </div>
-                </div>
-                <div>
-                    <input type="checkbox" name="news" id="ctrl-news">
-                    <label for="ctrl-news">Desejo receber novidades.</label>
-                </div>
-                <div>
-                    <input type="submit" name="submit" id="ctrl-submit" value="Enviar">
-                    <input type="reset" value="Limpar">
-                </div>
-            </form>
+                    <div>
+                        <label for="ctrl-plataform">Qual sua plataforma preferida?</label>
+                        <div>
+                            <input type="radio" name="plataform" id="ctrl-plataform-1">
+                            <label for="ctrl-plataform-1">PC</label>
+                            <input type="radio" name="plataform" id="ctrl-plataform-2">
+                            <label for="ctrl-plataform-2">Xbox</label>
+                            <input type="radio" name="plataform" id="ctrl-plataform-3">
+                            <label for="ctrl-plataform-3">Playstation</label>
+                        </div>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="news" id="ctrl-news">
+                        <label for="ctrl-news">Desejo receber novidades.</label>
+                    </div>
+                    <div>
+                        <input type="submit" name="submit" id="ctrl-submit" value="Enviar">
+                        <input type="reset" value="Limpar">
+                    </div>
+                </form>
+            </div>
         </section>
     </main>
     
     <footer>
-        <div>
-            <a href="">@dsplaygames</a>
-            <a href="">/dsplaygames</a>
-        </div>
-        <div>
-            <p>DS Play Games Ltda. Todos direitos reservados</p>
-        </div>
-        <div>
-            <a href="">Política de privacidade</a>
-            <a href="">Termos de uso</a>
+        <div class="container">
+            <div>
+                <a href="">@dsplaygames</a>
+                <a href="">/dsplaygames</a>
+            </div>
+            <div>
+                <p>DS Play Games Ltda. Todos direitos reservados</p>
+            </div>
+            <div>
+                <a href="">Política de privacidade</a>
+                <a href="">Termos de uso</a>
+            </div>
         </div>
     </footer>
 </body>
