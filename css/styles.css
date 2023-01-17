@@ -21,3 +21,29 @@
     max-width: 960px;
     margin: 0 auto;
 }
+
+header {
+    background-color: var(--color-green);
+    height: 90px;
+    display: flex;
+    box-shadow: 0 3px 5px var(--color-darkgray-text);
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav h1 {
+    font-size: 18px;
+    color: var(--color-white);
+}
+
+nav ul {
+    display: none;
+}
+
+nav img {
+    width: 62px;
+}
