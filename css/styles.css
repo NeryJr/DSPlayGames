@@ -5,8 +5,10 @@
     --color-white: #FFFFFF;
     --color-red: #DD7E92;
     --color-lightgray: #F0F0F0;
+    --color-gray-form-text: #C4C4C4;
     --color-darkgray-text: #797979;
     --color-white-background: #E5E5E5;
+    --color-black-background: #383838;
 }
 
 * {
@@ -14,6 +16,11 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
+}
+
+a, a:hover {
+    text-decoration: none;
+    color: unset;
 }
 
 .container {
@@ -112,7 +119,13 @@ nav img {
 
 .games {
     background-color: var(--color-white-background);
-    padding: 20px 10px;
+    padding: 40px 10px;
+}
+
+.games-area {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .games h2 {
@@ -122,10 +135,13 @@ nav img {
 }
 
 .games-card {
-    padding: 28px 0;
+    margin: 28px 30px 5px 0;
     display: flex;
     flex-direction: column;
     align-items: center;
+    border-radius: 8px;
+    box-shadow: 0 1px 5px var(--color-darkgray-text);
+
 }
 
 .games-card img {
@@ -162,4 +178,187 @@ nav img {
     font-size: 36px;
     color: var(--color-green);
     padding-top: 13px 0 15px 0;
+}
+
+.form {
+    background-color: var(--color-white);
+    padding: 40px 10px;
+}
+
+.form-section {
+    display: flex;
+    justify-content: center;
+}
+
+.form h2 {
+    color: var(--color-darkgray-text);
+    text-align: center;
+    margin-bottom: 16px;
+}
+
+.form-edit {
+    background-color: var(--color-lightgray);
+    padding: 50px 10px 35px 10px;
+    border-radius: 8px;
+    min-width: 300px;
+}
+
+.form-text input{
+    min-width: 280px;
+    padding: 13px 22px;
+    margin-bottom: 20px;
+    border-radius: 4px;
+    border: 1px solid var(--color-darkgray-text);
+    font-size: 16px;
+}
+
+.form-text input::placeholder {
+    color: var(--color-gray-form-text);
+}
+
+.form-radio {
+    font-size: 16px;
+    color: var(--color-darkgray-text);
+}
+
+.form-radio-text {
+    padding: 8px 0 28px 0;
+    font-size: 16px;
+}
+
+.form-radio-text input {
+    height: 23px;
+    width: 23px;
+}
+
+.form-radio-input {
+    display: flex;
+    align-items: center;
+    padding-bottom: 8px;
+}
+
+.form-radio-input label {
+    padding-left: 7px;
+}
+
+.form-checkbox {
+    display: flex;
+    align-items: center;
+}
+
+.form-checkbox input {
+    height: 23px;
+    width: 23px;
+}
+
+.form-checkbox label {
+    font-size: 16px;
+    padding-left: 9px;
+    color: var(--color-darkgray-text);
+}
+
+.form-send {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 48px;
+}
+
+#ctrl-submit {
+    width: 244px;
+    color: var(--color-white);
+    background-color: var(--color-red);
+    padding: 20px 0px;
+    border-radius: 8px;
+    border: none;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+#ctrl-reset {
+    width: 244px;
+    color: var(--color-red);
+    background-color: var(--color-white);
+    padding: 20px 0px;
+    border-radius: 8px;
+    border: 2px solid var(--color-red);
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+footer {
+    background-color: var(--color-black-background);
+    color: var(--color-white);
+    font-size: 14px;
+    padding: 30px 0;
+}
+
+.footer-elements {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-social-media {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-text {
+    text-align: center;
+    padding: 37px 0;
+}
+
+.footer-terms {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media (min-width: 576px){
+
+    nav ul {
+        display: flex;
+        margin-left: 35vw;
+    }
+
+    nav ul li {
+        display: flex;
+        font-size: 14px;
+        color: var(--color-white);
+        padding-left: 29px;
+    }
+
+    .form-edit {
+        max-width: 790px;
+        padding-left: 64px;
+        padding-right: 64px;
+    }
+
+    .form-text {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .form-text input {
+        max-width: 642px;
+    }
+
+    .form-send {
+        flex-direction: row;
+        justify-content: center;
+        padding-top: 40px;
+    }
+
+    #ctrl-reset {
+        margin: 0;
+        margin-left: 54px;
+    }
+
+    .footer-elements {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
 }

@@ -11,11 +11,13 @@
     <header>   
         <nav class="container">
             <h1>DSPlayGames</h1>
-            <ul>
-                <li><a href="#news">Notícias</a></li>
-                <li><a href="#games">Jogos</a></li>
-                <li><a href="#subscribe">Increva-se</a></li>
-            </ul>
+            <div class="nav-profile">
+                <ul>
+                    <li><a href="#news">Notícias</a></li>
+                    <li><a href="#games">Jogos</a></li>
+                    <li><a href="#subscribe">Inscreva-se</a></li>
+                </ul>
+            </div>
             <img src="img/Profile.svg" alt="Foto de perfil">
         </nav>
     </header>
@@ -53,8 +55,8 @@
         </section>
 
         <section class="games">
-            <div class="container">
-                <h2>Jogos</h2>
+            <h2>Jogos</h2>
+            <div class="container games-area">
                 <div class="games-card">
                     <img src="img/game.png" alt="Jogo Horizon Forbidden West">
                     <div class="games-card-text">
@@ -82,32 +84,38 @@
             </div>
         </section>
 
-        <section>
-            <div class="container">
-                <h2>Faça sua inscrição</h2>
-                <form action="submit">
-                    <div>
+        <section class="form">
+            <h2>Faça sua inscrição</h2>
+            <div class="container form-section">
+                <form action="submit" class="form-edit">
+                    <div class="form-text">
                         <input type="text" name="name" id="ctrl-name" placeholder="Nome completo">
                         <input type="email" name="email" id="ctrl-email" placeholder="Digite seu email">
                     </div>
-                    <div>
+                    <div class="form-radio">
                         <label for="ctrl-plataform">Qual sua plataforma preferida?</label>
-                        <div>
-                            <input type="radio" name="plataform" id="ctrl-plataform-1">
-                            <label for="ctrl-plataform-1">PC</label>
-                            <input type="radio" name="plataform" id="ctrl-plataform-2">
-                            <label for="ctrl-plataform-2">Xbox</label>
-                            <input type="radio" name="plataform" id="ctrl-plataform-3">
-                            <label for="ctrl-plataform-3">Playstation</label>
+                        <div class="form-radio-text">
+                            <div class="form-radio-input">
+                                <input type="radio" name="plataform" id="ctrl-plataform-1">
+                                <label for="ctrl-plataform-1">PC</label>
+                            </div>
+                            <div class="form-radio-input">
+                                <input type="radio" name="plataform" id="ctrl-plataform-2">
+                                <label for="ctrl-plataform-2">Xbox</label>
+                            </div>
+                            <div class="form-radio-input">
+                                <input type="radio" name="plataform" id="ctrl-plataform-3">
+                                <label for="ctrl-plataform-3">Playstation</label>
+                            </div>
                         </div>
                     </div>
-                    <div>
-                        <input type="checkbox" name="news" id="ctrl-news">
-                        <label for="ctrl-news">Desejo receber novidades.</label>
-                    </div>
-                    <div>
+                        <div class="form-checkbox">
+                            <input type="checkbox" name="news" id="ctrl-news">
+                            <label for="ctrl-news">Desejo receber novidades.</label>
+                        </div>
+                    <div class="form-send">
                         <input type="submit" name="submit" id="ctrl-submit" value="Enviar">
-                        <input type="reset" value="Limpar">
+                        <input type="reset" value="Limpar" id="ctrl-reset">
                     </div>
                 </form>
             </div>
@@ -115,15 +123,15 @@
     </main>
     
     <footer>
-        <div class="container">
-            <div>
+        <div class="container footer-elements">
+            <div class="footer-social-media">
                 <a href="">@dsplaygames</a>
                 <a href="">/dsplaygames</a>
             </div>
-            <div>
+            <div class="footer-text">
                 <p>DS Play Games Ltda. Todos direitos reservados</p>
             </div>
-            <div>
+            <div class="footer-terms">
                 <a href="">Política de privacidade</a>
                 <a href="">Termos de uso</a>
             </div>
