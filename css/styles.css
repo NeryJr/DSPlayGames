@@ -144,6 +144,10 @@ nav img {
 
 }
 
+.card-space {
+    margin-right: 15px;
+}
+
 .games-card img {
     width: 300px;
     height: 169px;
