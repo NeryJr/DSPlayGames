@@ -135,17 +135,12 @@ nav img {
 }
 
 .games-card {
-    margin-top: 27px;
+    margin: 27px 5px 0 5px;
     display: flex;
     flex-direction: column;
     align-items: center;
     border-radius: 8px;
     box-shadow: 0 1px 5px var(--color-darkgray-text);
-
-}
-
-.card-space {
-    margin-right: 15px;
 }
 
 .games-card img {
@@ -410,12 +405,9 @@ footer {
         margin: 0 110px;
     }
 
-    .card-space {
-        margin-right: 30px;
-    }
-
     .games-card {
-        margin-top: 73px;
+        margin: 73px 15px 0 15px;
+
     }
 
     #subscribe {
