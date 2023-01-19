@@ -56,11 +56,12 @@ nav img {
     width: 62px;
 }
 
-.last-news {
+#news {
     padding: 40px 10px;
+    background-color: var(--color-white);
 }
 
-.last-news h2 {
+#news h2 {
     color: var(--color-darkgray-text);
     font-size: 24px;
     text-align: center;
@@ -71,7 +72,7 @@ nav img {
     padding: 16px 13px 13px 12px;
     border-radius: 8px;
     margin: 8px 0 28px 0;
-    box-shadow: 0 3px 2px var(--color-darkgray-text);
+    box-shadow: 0 3px 3px var(--color-gray-form-text);
 }
 
 .card-last-news h3 {
@@ -117,7 +118,7 @@ nav img {
     font-weight: bold;
 }
 
-.games {
+#games {
     background-color: var(--color-white-background);
     padding: 40px 10px;
 }
@@ -128,7 +129,7 @@ nav img {
     justify-content: center;
 }
 
-.games h2 {
+#games h2 {
     color: var(--color-green);
     font-size: 24px;
     text-align: center;
@@ -140,7 +141,7 @@ nav img {
     flex-direction: column;
     align-items: center;
     border-radius: 8px;
-    box-shadow: 0 1px 5px var(--color-darkgray-text);
+    box-shadow: 0 3px 3px var(--color-gray-form-text);
 
 }
 
@@ -180,7 +181,7 @@ nav img {
     padding-top: 13px 0 15px 0;
 }
 
-.form {
+#subscribe {
     background-color: var(--color-white);
     padding: 40px 10px;
 }
@@ -190,7 +191,7 @@ nav img {
     justify-content: center;
 }
 
-.form h2 {
+#subscribe h2 {
     color: var(--color-darkgray-text);
     text-align: center;
     margin-bottom: 16px;
@@ -200,11 +201,12 @@ nav img {
     background-color: var(--color-lightgray);
     padding: 50px 10px 35px 10px;
     border-radius: 8px;
-    min-width: 300px;
+    width: 300px;
+    box-shadow: 0px 3px 3px var(--color-gray-form-text);
 }
 
 .form-text input{
-    min-width: 280px;
+    width: 280px;
     padding: 13px 22px;
     margin-bottom: 20px;
     border-radius: 4px;
@@ -320,7 +322,7 @@ footer {
 
     nav ul {
         display: flex;
-        margin-left: 35vw;
+        margin-left: 
     }
 
     nav ul li {
@@ -330,8 +332,12 @@ footer {
         padding-left: 29px;
     }
 
+    #news {
+        padding: 40px 105px;
+    }
+
     .form-edit {
-        max-width: 790px;
+        width: 790px;
         padding-left: 64px;
         padding-right: 64px;
     }
@@ -342,7 +348,7 @@ footer {
     }
 
     .form-text input {
-        max-width: 642px;
+        width: 642px;
     }
 
     .form-send {
